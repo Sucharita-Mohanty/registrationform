@@ -1,25 +1,13 @@
 import React from "react";
 import "./Registrationform.css";
 import Button from "./Button";
-import { useState } from "react";
+// import { useState } from "react";
 import { HiArchiveBox } from "react-icons/hi2";
 
 function Registrationform() {
-  let [counter, setCounter] = useState(0)
-  
-  const addValue = () =>{
+ 
     
-    setCounter(counter + 1)
-    
-    console.log(counter ,Math.random())
 
-  }
-
-  const removeValue = () =>{
-    setCounter(counter-1)
-    
-    console.log(counter, Math.random())
-  }
   return (
     <>
       <div className="main">
@@ -28,31 +16,40 @@ function Registrationform() {
           <div className="form">
             <form onSubmit={(e) => e.preventDefault()}>
               <div className="contener1">
-                <label htmlFor="text">Enter text</label>
-                <input type="test" id="text" className="input-box" />
+                {/* <label htmlFor="text">Enter text</label> */}
+                <input type="test" id="text"
+                  placeholder="Bariflolab"
+                  className="input-box" />
 
-                <label htmlFor="number2">Enter number</label>
+                {/* <label htmlFor="number2">Enter number</label> */}
                 <input
                   type="number"
                   name=""
                   id="number2"
                   className="input-box"
+                  placeholder="01234567890"
                 />
 
-                <label htmlFor="number">Enter Number</label>
+                {/* <label htmlFor="number">Enter Number</label> */}
                 <input
                   type="number"
                   name=""
                   id="number"
                   className="input-box"
+                  placeholder="1234567890"
+
                 />
               </div>
               <div className="contener2">
-                <label htmlFor="text2">Enter text</label>
-                <input type="test" id="text2" className="input-box" />
+                {/* <label htmlFor="text2">Enter text</label> */}
+                <input type="test" id="text2" 
+                  placeholder="pvt.ltd"
+                  className="input-box" />
 
-                <label htmlFor="email">Enter email</label>
-                <input type="email" name="" id="email" className="input-box" />
+                {/* <label htmlFor="email">Enter email</label> */}
+                <input type="email" name="" id="email"
+                  placeholder="test@gmail.com"
+                  className="input-box" />
               </div>
             </form>
           </div>
@@ -67,7 +64,10 @@ function Registrationform() {
               <option value="saab">Water Body</option>
               <option value="mercedes">3D Printing</option>
             </select>
-            <input type="test" id="text" className="input-box input-text" />
+            <input type="test" id="text" 
+                  placeholder="Puri"
+
+            className="input-box input-text" />
           </div>
           <div className="deviceBtn-section">
             <div className="device">
@@ -76,9 +76,11 @@ function Registrationform() {
               </label>
               <select className="catagory" name="DeviceType" id="DeviceType">
                 <option value="Aqua">Select Your Catagory</option>
-                <option value="Aqua">Aqua</option>
-                <option value="saab">Water Body</option>
-                <option value="mercedes">3D Printing</option>
+                <option value="Aqua">Monitoring</option>
+                <option value="saab">gate way</option>
+                <option value="mercedes">Aeration</option>
+                <option value="mercedes">Aeration test</option>
+
               </select>
             </div>
 
@@ -87,7 +89,7 @@ function Registrationform() {
                 <p>Device Quantity</p>
               </div>
               <div className="btns">
-                <Button ></Button>
+                <Button/>
              
               </div>
              

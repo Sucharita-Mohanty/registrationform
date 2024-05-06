@@ -86,10 +86,11 @@ form{
   border: 0;
 
 }
+
 .btn{
-  margin: 1rem 0 0 16rem;
+  margin: 1rem 0 0 14rem;
 }
-button:hover{
+.button:hover{
   background-color: blueviolet;
   color: aliceblue;
 }
@@ -126,7 +127,7 @@ p{
   font-weight: bolder;
 }
 .add-btn{
-  margin: 1rem 0 0 20rem;
+  margin: 1rem 0 0 15rem;
  
 }
 
@@ -141,4 +142,11 @@ p{
   border: 0cap;border-radius: 5px;
   color:black ;
 
+}
+.counter-btn{
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: black;
+  margin: 0.3rem;
+  color: white;
 }

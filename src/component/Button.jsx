@@ -1,5 +1,6 @@
 import React, { Children } from 'react'
 import { useState } from 'react'
+import './Registrationform.css'
 function Button({children}) {
   let [counter, setCounter] = useState(0)
   
@@ -17,11 +18,12 @@ function Button({children}) {
     console.log(counter, Math.random())
   }
   return (
-    <div>
-       <button onClick={addValue}>+</button>
-       <button>{counter}</button>
-       <button onClick={removeValue}>-</button>
-    </div>
+    <>
+       <button className='counter-btn' onClick={addValue}>+</button>
+       <button className='counter-btn'  >{counter}</button>
+       <button className='counter-btn'  onClick={removeValue}>-</button>
+       
+    </>
   )
 }
 
